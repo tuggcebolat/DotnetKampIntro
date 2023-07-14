@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.csproj", "{FA4ACA49-F2AB-4689-8533-82255C25766A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{FA4ACA49-F2AB-4689-8533-82255C25766A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D26A91F0-653E-4644-B3DB-D4D3205E0041} = {D26A91F0-653E-4644-B3DB-D4D3205E0041}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueType_ReferenceType", "ValueType_ReferenceType\ValueType_ReferenceType.csproj", "{D26A91F0-653E-4644-B3DB-D4D3205E0041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{B15261BF-ED2E-4DDC-9929-BF996C8688F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{FA4ACA49-F2AB-4689-8533-82255C25766A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4ACA49-F2AB-4689-8533-82255C25766A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4ACA49-F2AB-4689-8533-82255C25766A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26A91F0-653E-4644-B3DB-D4D3205E0041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26A91F0-653E-4644-B3DB-D4D3205E0041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26A91F0-653E-4644-B3DB-D4D3205E0041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26A91F0-653E-4644-B3DB-D4D3205E0041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15261BF-ED2E-4DDC-9929-BF996C8688F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15261BF-ED2E-4DDC-9929-BF996C8688F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15261BF-ED2E-4DDC-9929-BF996C8688F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15261BF-ED2E-4DDC-9929-BF996C8688F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

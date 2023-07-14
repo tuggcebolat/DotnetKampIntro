@@ -33,6 +33,10 @@
             sepetManager.Add(urun1);
             sepetManager.Add(urun2);
 
+            sepetManager.Add2("Grape", "green", 50);
+            sepetManager.Add2("Apple", "green", 50);
+            sepetManager.Add2("Banana", "green", 80);
+
 
         }
     }

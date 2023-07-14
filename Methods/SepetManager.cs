@@ -13,5 +13,11 @@ namespace Methods
             Console.WriteLine(" Tebrikler sepete eklendi : " + urun.Name);  
         
         }   
+        public void Add2(string urunAdi,string description, double prize)
+        {
+            Console.WriteLine(" Tebrikler sepete eklendi : " + urunAdi);
+
+
+        }
     }
 }
