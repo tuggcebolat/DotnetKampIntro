@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Product urun1 = new Product();
+            urun1.Id = 1;
             urun1.Name = "Apple";
             urun1.Price = 100;
             urun1.Description = "Amasya";
