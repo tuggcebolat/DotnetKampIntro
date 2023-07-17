@@ -6,7 +6,9 @@
         {
             MyList<string> isimler = new MyList<string>();
             isimler.Add("Tuğçe");
+            Console.WriteLine(isimler.Length);
 
+           
             Console.WriteLine("Hello, World!");
         }
     }
