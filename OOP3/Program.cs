@@ -13,12 +13,15 @@
           // HousingCreditManager housingCreditManager=new HousingCreditManager();
           //  housingCreditManager.Hesapla();
 
-            ICreditManager consumerCreditManagerr=new ConsumerCreditManager();
+            ICreditManager consumerCreditManager=new ConsumerCreditManager();
             ICreditManager vehicleLoanManager=new VehicleLoanManager();
             ICreditManager housingCreditManagerr=new HousingCreditManager();
 
             ApplicationManager applicationManager=new ApplicationManager();
-            applicationManager.BasvuruYap(consumerCreditManagerr);
+           // applicationManager.BasvuruYap(consumerCreditManagerr);
+
+            List<ICreditManager> credits=new List<ICreditManager>() { consumerCreditManager, vehicleLoanManager};
+            applicationManager.KrediOnBilgilendirmesiYap(credits);
 
         }
     }

@@ -15,5 +15,13 @@ namespace OOP3
             HousingCreditManager housingCreditManager = new HousingCreditManager();
             housingCreditManager.Hesapla();
         }
+        public void KrediOnBilgilendirmesiYap(List<ICreditManager>credits)
+        {
+            foreach (var credit in credits)
+            {
+                credit.Hesapla();
+            }
+
+        }
     }
 }

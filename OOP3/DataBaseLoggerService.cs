@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-     class DataBaseLoggerService:ILoggerService   //ıloggerservice alternatifi
-    {
+    class DataBaseLoggerService:ILoggerService   //ıloggerservice alternatifi
+     {
         public void Log()
         {
             Console.WriteLine("Veritabanına loglandı.");
         }
 
-    }
+     }
 }
