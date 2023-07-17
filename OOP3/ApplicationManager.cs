@@ -7,19 +7,23 @@ using System.Threading.Tasks;
 namespace OOP3
 {
     internal class ApplicationManager
-    {
-        public void BasvuruYap(ICreditManager creditManager)
+    {   
+        //method injection
+        public void BasvuruYap(ICreditManager creditManager, ILoggerService loggerService)
         {
             //başvuran bilgileri değerlendirme
             //
-            HousingCreditManager housingCreditManager = new HousingCreditManager();
-            housingCreditManager.Hesapla();
+            // HousingCreditManager housingCreditManager = new HousingCreditManager();
+            //housingCreditManager.Hesapla();
+            creditManager.Hesapla();
+            loggerService.Log();
+
         }
         public void KrediOnBilgilendirmesiYap(List<ICreditManager>credits)
         {
             foreach (var credit in credits)
             {
-                credit.Hesapla();
+                credit.Hesapla(); 
             }
 
         }
