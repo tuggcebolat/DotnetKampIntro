@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    interface ILoggerService  
+    interface  ICreditManager
     {
-        //interface olduğu için sadece void yazıyoruz
-        void Log();
+       void Hesapla(); //interface bunu içermek zorunda
+       void BiseyYap();
     }
 }

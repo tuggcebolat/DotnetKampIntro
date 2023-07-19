@@ -17,11 +17,16 @@
             ICreditManager vehicleLoanManager=new VehicleLoanManager();
             ICreditManager housingCreditManagerr=new HousingCreditManager();
 
+            ILoggerService databaseloggerService = new DataBaseLoggerService();
+            ILoggerService fileloggerService = new FileLoggerService();
+
+            List<ILoggerService> loggers = new List<ILoggerService>() { new SmsLoggerService(), new FileLoggerService()};
             ApplicationManager applicationManager=new ApplicationManager();
-           // applicationManager.BasvuruYap(consumerCreditManagerr);
+            applicationManager.BasvuruYap(new BusinessLoanManager(), loggers);
 
             List<ICreditManager> credits=new List<ICreditManager>() { consumerCreditManager, vehicleLoanManager};
-            applicationManager.KrediOnBilgilendirmesiYap(credits);
+           // applicationManager.KrediOnBilgilendirmesiYap(credits);
+
 
         }
     }

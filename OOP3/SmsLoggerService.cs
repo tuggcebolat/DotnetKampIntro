@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    interface  ICreditManager
+    internal class SmsLoggerService : ILoggerService
     {
-       void Hesapla(); //interface bunu içermek zorunda
-        void BiseyYap();
+        public void Log()
+        {
+            Console.WriteLine("SMS yollandı.");
+        }
     }
 }
